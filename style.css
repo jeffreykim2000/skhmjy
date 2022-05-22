@@ -1,0 +1,337 @@
+.buttonforabout {
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    margin-left: 43%;
+    margin-right: 50%;
+    background-color: wheat;
+    border-radius: 10px;
+  }
+  
+.buttonforabout:hover {
+    background-color: skyblue;
+  }
+
+.flexhorizontal {
+    display: flex;
+  }
+  
+.flexhorizontal > div {
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+a:hover {
+    color: salmon;
+}
+
+
+
+html, body{
+    margin: 0;
+    background-image: url(./asset/background.png);
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-size: 4vw;
+}
+h2{
+    font-size: 3vw;
+}
+hr{
+    width:0;
+}
+
+.header {
+    width: 100%;
+    background-color: #f4f2ea;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 150;
+}
+.header-right {
+    padding-right: 50px;
+    float: right;
+}
+.button {
+    background-color: #f4f2ea;
+    color: #000a39;
+    border: 2px solid #000a39;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 15px 32px;
+    display: inline-flex;
+    margin: 3vh 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #69b0b1;
+  border: 2px solid #69b0b1;
+  color: #f4f2ea;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  background-color: #69b0b1;
+  border: 2px solid #69b0b1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.logo {
+    padding-left: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title {
+    position: absolute;
+    top: 45%;
+    font-size: 5vw;
+}
+.box{
+    margin-top: 50px;
+    width: 50vw;
+    height: 45vw;
+    /*border-style: solid;
+    border-color: black;*/
+}
+.box h2{
+    position: absolute;
+    top: 35%;
+}
+.box p{
+    position: absolute;
+    top: 45%;
+    max-width: 40vw;
+    font-size: 1.5vw;
+}
+
+.flexDisplay{
+    display:flex;
+}
+
+.intro{
+    font-size: 2vw;
+}
+
+/* Schedule */
+.scheduleBar{
+    width: 100%;
+    border-radius: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Price */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+/* FAQs */
+/* Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-size: 3vh;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.row{
+    display: flex;
+    justify-content:space-around;
+}
+.row .row1{
+    width: 250px;
+    height: 450px;
+    object-fit: contain;
+}
+.row .row2{
+    width: 350px;  
+    height: 550px;
+    object-fit: contain;
+}
+.row .row3{
+    width: 300px;
+    height: 600px;
+    object-fit: contain;
+}
+.row .row4{
+    width: 400px;
+    height: 800px;
+    object-fit: contain;
+}
+.row .row5{
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.image a:hover{
+    transform: scale(1.8)
+}
+
+/*------------------------------------------------*/
+
+.image-frame{
+    display:inline-block;
+    width:23.36%;
+    margin:5px;
+    height: 300px;
+    width: 1250px;
+    overflow: hidden;
+}
+.image-frame img{
+    height: 300px;
+    width: 1250px;
+    object-fit:cover;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.image-frame:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter:blur(3px);
+    filter: blur(3px);
+}
+span.text-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    height: 400px;
+    width: 1250px;
+    text-align:center;
+    opacity: 0;
+    position:absolute;
+    border-radius: 100px;
+}
+.image-frame:hover span.text-content {
+    opacity: 1;
+    z-index:100;
+    background-color: black;
+}
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+@media screen and (max-width: 956px){
+    .image-frame{width:47.25%;hieght:300px;}
+    .image-frame img{height:325px;}
+    span.text-content{width:46.2%;}
+}
+@media screen and (max-width: 544px){
+    .image-frame{width:98%;}
+    .image-frame img{height:400px;} 
+    span.text-content{width:94.5%;}
+}
+*/
+
+
+
+/*------------------------------------------------*/
+@media only screen and (max-width: 620px){
+    html, body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    h1{
+        font-size: 3vh;
+    }
+    h2{
+        font-size: 2vh;
+    }
+    .header{
+        position: relative;
+    }
+    .logo{
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .header-right {float: none;padding-right: 0;}
+    .button {
+        margin: 0 0;
+        width: 100%;
+    }
+    .intro{font-size: 3vh;}
+    .box{
+        margin-left: 0;
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        position: relative;
+        top: 0;
+        font-size: 4vh;
+    }
+    .box h2{
+        position: relative;
+        top: 0;
+    }
+    .box p{
+        position: relative;
+        max-width: 100%;
+        top: 0;
+        font-size: 2vh;
+    }
+    .flexDisplay{
+        display:block;
+    }
+
+    .image-frame img{height:100%;} 
+    span.text-content{width:100%;}
+
+    .row{display: block;}
+}
+
+.image-frame{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 1250px;
+}
